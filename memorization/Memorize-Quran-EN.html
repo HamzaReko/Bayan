@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة ختم القرآن الكريم</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">خطة ختم القرآن الكريم</h1>
+        <form id="planForm" class="mb-4">
+            <div class="form-group">
+                <label for="duration">اختر المدة الزمنية:</label>
+                <select id="duration" class="form-control" required>
+                    <option value="30">شهر</option>
+                    <option value="60">شهرين</option>
+                    <option value="90">3 شهور</option>
+                    <option value="180">6 شهور</option>
+                    <option value="365">سنة</option>
+                    <option value="540">سنة ونصف</option>
+                    <option value="730">سنتين</option>
+                    <option value="1095">3 سنوات</option>
+                    <option value="1460">4 سنوات</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="daysPerWeek">اختر عدد أيام الحفظ في الأسبوع:</label>
+                <select id="daysPerWeek" class="form-control" required>
+                    <option value="1">يوم واحد</option>
+                    <option value="2">يومان</option>
+                    <option value="3">3 أيام</option>
+                    <option value="4">4 أيام</option>
+                    <option value="5">5 أيام</option>
+                    <option value="6">6 أيام</option>
+                    <option value="7">7 أيام</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="unit">اختر وحدة الحفظ:</label>
+                <select id="unit" class="form-control" required>
+                    <option value="pages">صفحات</option>
+                    <option value="lines">سطور</option>
+                </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-block">احسب الخطة</button>
+        </form>
+
+        <div id="result" class="hidden">
+            <h2>الخطة اليومية:</h2>
+            <p id="dailyAmount" class="lead"></p>
+        </div>
+
+        <button id="notifyBtn" class="btn btn-secondary btn-block hidden">تفعيل التذكيرات اليومية</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

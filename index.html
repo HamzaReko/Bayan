@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bayan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./Font/icomoon/style.css">
+  <script defer src="js/arabic.js"></script>
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      border: solid rgba(0, 0, 0, 0.15);
+      border-width: 1px 0;
+      box-shadow: inset 0 0.5em 1.5em rgba(0, 0, 0, 0.1),
+        inset 0 0.125em 0.5em rgba(0, 0, 0, 0.15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -0.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #479719;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #479719;
+      --bs-btn-hover-border-color: #6da54c;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #7fb95d;
+      --bs-btn-active-border-color: #69b13f;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+    <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown">
+      <span class="ms-1" id="activelang">العربيه</span>
+
+      <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+      <li>
+        <button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false" id="arabic">
+          العربيه
+        </button>
+      </li>
+      <li>
+
+        <a class="text-decoration-none text-black" href="Home-en.html">
+
+          <button type="button" class="dropdown-item d-flex align-items-center" aria-pressed="false" id="english">
+
+
+
+
+            English
+          </button>
+        </a>
+
+      </li>
+    </ul>
+  </div>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-3 fw-semibold fs-1 khed" href="#">بيان</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse me-5" id="navbarNavDropdown">
+        <ul class="navbar-nav fw-bolder">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">الرئيسيه</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">أذكار</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">تسبيح</a>
+          </li>
+          <li class="nav-item dropdown ms-4">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              القرآن
+            </a>
+            <ul class="dropdown-menu w-25">
+              <li><a class="dropdown-item" href="memorization/Memorize-Quran-AR.html">حفظ القرآن</a></li>
+              <li><a class="dropdown-item" href="#"> سماع القرآن</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section style="height: 105vh;" class="text-center first-section">
+      <div class="h-75 d-flex justify-content-center align-items-center flex-column">
+        <h1 class="needafter" style="color: #edfcb9; font-size: 4.5rem; padding-top: 8rem;">الأيه اليوميه</h1>
+        <p style="color: rgba(255, 255, 255, 0.918);" class="fs-1">
+          بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+          <br>
+          إِذ قالَ لِأَبيهِ وَقَومِهِ ما هٰذِهِ التَّماثيلُ الَّتى أَنتُم لَها عٰكِفونَ
+          <br>
+          سُورَةُ الأَنبِيَاءِ-52
+        <p style="color: #f3e08e !important;" class="fs-4" id="higry"></p>
+        </p>
+      </div>
+
+    </section>
+    <section dir="rtl" class="second-section h-100">
+      <div class="mx-4 d-flex flex-row-reverse justify-content-between align-items-center mrl">
+        <img class="w-50" src="./Imgs/—Pngtree—kids moslem praying_7056672.png" alt="">
+        <div class="w-50 tazbet">
+          <h1 style="color: #edfcb9; font-size: 4.5rem; padding-top: 8rem;" class="needafter2">الاذكار اليوميه</h1>
+          <p style="color: rgba(255, 255, 255, 0.918);" class="fs-1">
+            بِسْمِ ٱللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ
+            <br>
+            لا اله الا انت سبحانك اني كنت من الظالمين 💚
+            <br>
+            <sup class="fs-4">3 مرات</sup>
+          </p>
+          <p style="color: rgba(255, 255, 255, 0.918);" class="fs-1">
+            سبحان الله وبحمده سبحان الله العظيم 💚.
+            <br>
+            <sup class="fs-4">3 مرات</sup>
+          </p>
+          <a href="#">
+            <button class="btn btn-success w-25 p-3" style="min-width: 200px !important;">جميع الأذكار</button>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section style="height: 100%; padding-bottom: 2rem;" class="last-section text-center pt-5">
+      <h1 style="font-size: 4rem; color: wheat;" class="pt-5 needafter3"> دعمك يهمنا</h1>
+      <div class="content d-flex justify-content-around flex-wrap my-5">
+
+
+
+        <a href="https://paypal.me/rekostudio" target="_blank">
+          <div class="card" id="card1">
+            <div class="icon">
+              <span class="icon-paypal"></span>
+
+            </div>
+            <div class="info">
+              <div class="email">
+                <h3>Paypal</h3>
+
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+        <a href="https://ko-fi.com/rekostudio" target="_blank">
+          <div class="card" id="card2">
+            <div class="icon">
+              <span class="icon-coffeescript"></span>
+            </div>
+            <div class="info" id="des">
+              <h3>Buy me a Coffee</h3>
+
+            </div>
+
+          </div>
+        </a>
+
+
+      </div>
+
+    </section>
+    <div class="container-fluid px-0">
+      <footer class="pt-5">
+        <div class="d-flex justify-content-around flex-wrap">
+          <div class=" mb-3">
+            <h5 class="fw-bolder mb-3 khed fs-1">بيان</h5>
+            <p class="text-body-secondary fw-bolder">موقع اسلامي <br> الطريق الي الجنه💖</p>
+          </div>
+
+          <div class="mb-3 d-none d-sm-flex align-items-center flex-column">
+            <h5>الاقسام</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">الرئيسيه</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">أذكار</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">تسبيح</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">حفظ القرآن</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">السماع الي القرآن</a></li>
+            </ul>
+          </div>
+          <div class="mb-3 mt-3">
+            <form class="px-5">
+              <h5>تواصل معنا</h5>
+              <p>عن طريق الضغط علي هذا الزر</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <button class="btn btn-success" type="button"><a class="text-decoration-none text-white"
+                    href="mailto:hamzareko.business@gmail.com">تواصل الأن</a></button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div dir="ltr"
+          class="d-flex flex-column flex-sm-row justify-content-center align-items-center pt-4 mt-4 border-top">
+          <p class="ms-sm-5">&copy; 2024 <a style="color: rgb(0, 0, 0);" href="https://rekostudio.com">Reko Studio</a>,
+            Inc. All rights reserved.</p>
+          <ul style="padding-right: 10vw;" class="list-unstyled d-flex ps-5">
+            <li><a style="text-decoration: none;" class="link-body-emphasis" href="#"><span
+                  class="icon-instagram fs-4"></span></a></li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </main>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+<!-- <div class="container-fluid px-0">
+  <footer class="pt-5">
+    <div class="d-flex justify-content-around flex-wrap">
+      <div class=" mb-3">
+        <h5 class="fw-bolder mb-3">Bayan</h5>
+          <p class="text-body-secondary">A Islamic Website <br> Road to heaven 💖</p>
+      </div>
+
+      <div class="mb-3 d-none d-sm-block">
+        <h5>Islam</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Athkar</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Tasbeh</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Keep Quran</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Listen to Quran</a></li>
+        </ul>
+      </div>
+      <div class="mb-3 mt-3">
+        <form class="px-5">
+          <h5>Subscribe to our newsletter</h5>
+          <p>Monthly digest of what's new and exciting from us.</p>
+          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+            <label for="newsletter1" class="visually-hidden">Email address</label>
+            <button class="btn btn-success" type="button"><a class="text-decoration-none text-white" href="mailto:hamzareko.business@gmail.com">Subscribe</a></button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center pt-4 mt-4 border-top">
+      <p class="ms-5">&copy; 2024 <a style="color: rgb(0, 0, 0);" href="https://rekostudio.com">Reko Studio</a>, Inc. All rights reserved.</p>
+      <ul style="padding-right: 7vw;" class="list-unstyled d-flex">
+        <li class="ms-3"><a style="text-decoration: none;" class="link-body-emphasis" href="#"><span class="icon-instagram fs-4"></span></a></li>
+      </ul>
+    </div>
+  </footer>
+</div> -->

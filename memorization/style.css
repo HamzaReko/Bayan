@@ -1,0 +1,47 @@
+
+.container {
+
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+*:not(option){
+  color: white;
+}
+button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+main{
+  background-image:url(../Imgs/new.png) ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+select{
+  background-color: rgb(236, 255, 208) !important;
+  font-size: 1.1rem !important;
+}
+label{
+  font-size: 1.5rem !important;
+}
+body > main > div{
+  max-width: 70vw !important;
+}
+.btn-success{
+  background-color: #36b67a !important;
+}
+#dailyAmount{
+  font-weight: 700;
+}

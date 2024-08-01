@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+font-family: "Poppins", sans-serif;
+}   
+ 
+@font-face {
+  font-family: "khed";
+  src: url(Font/Khediawy.ttf);
+}
+
+.navbar-collapse{
+  flex-grow: unset !important;
+}
+.khed{
+  font-family: "khed",sans-serif !important;
+}
+nav{
+  background-image: linear-gradient(#93a155,gold,#E0AB33);
+  opacity: 0.91;
+  border-bottom: rgba(0, 0, 0, 0.397) 2px solid;
+}
+.first-section{
+  background-image: url(Imgs/new.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.second-section{
+  background: rgb(5,83,43);
+  background: linear-gradient(180deg,#006d3e, rgba(5,83,43,1), rgb(21, 70, 45));
+}
+.last-section{
+background-image: linear-gradient(rgb(21, 70, 45),rgb(30, 99, 65),#006d3e,#008142);
+background-repeat: repeat;
+
+}
+.card {
+  background-color: #52a07a;
+  width: 21.25rem;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+  border-radius: 10px;
+  padding: 25px;
+  margin: 15px;
+  transition: 0.7s ease;
+}
+
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #0c0e07;
+  font-size: 8em;
+  text-align: center;
+}
+
+.info {
+  text-align: center;
+}
+
+
+.info h3 {
+  color: #000000;
+  font-size: 1.4em;
+  font-weight: 700;
+  margin: 10px;
+}
+#des p {
+  font-size: 1.1em;
+  font-weight: 600;
+}
+.last-section a {
+  text-decoration: none;
+}
+footer{
+
+background-color: #52a87e;
+}
+.needafter:after{
+  background-image: linear-gradient(#93a155,gold,#E0AB33);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 0.6rem auto auto auto;
+  position: relative;
+  right: 0;
+  width: 80%;
+}
+.needafter2:after{
+  background-image: linear-gradient(#93a155,gold,#E0AB33);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 0.6rem 0 auto auto;
+  position: relative;
+  right: 0;
+  width: 80%;
+}
+.needafter3:after{
+  background-image: linear-gradient(#93a155,gold,#E0AB33);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: 0.6rem auto auto auto;
+  position: relative;
+  right: 0;
+  width: 30%;
+}
+.needafter4:after{
+  background-image: linear-gradient(#93a155,gold,#E0AB33);
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 3px;
+  left: 0;
+  margin: auto;
+  margin-top: 1rem;
+  margin-left: 0;
+  position: relative;
+  right: 0;
+  width: 80%;
+}
+@media (max-width:688px) {
+.tazbet p{
+  font-size: 1rem !important;
+  /* line-height: 2.2rem */
+}
+.tazbet sup{
+  font-size: 0.7rem !important;
+}
+.tazbet h1{
+  font-size: 2rem !important;
+  padding-top: 2rem !important;
+}
+.tazbet button {
+  padding: 0.2rem !important ;
+  font-size:0.8rem;
+}
+.mrl{
+  margin-left: 0 !important;
+}
+.mrr{
+  margin-right: 0 !important;
+}
+body > main > section.last-section.text-center.pt-5 > h1{
+    font-size: 3rem !important;
+}
+body > main > section.last-section.text-center.pt-5 > h1{
+  font-size: 2.5rem !important;
+
+}
+body > main > section.text-center.first-section > div > h1{
+  font-size: 4rem !important;
+
+}
+}
+@media (max-width:390px) {
+  .card{
+    width: 15rem !important;
+  }
+}
